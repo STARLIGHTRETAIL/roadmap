@@ -1,6 +1,6 @@
 # Starlight Retail — Public Product Roadmap
 
-**Last updated:** YYYY-MM-DD  
+**Last updated:** 2026-01-06
 **Maintained by:** Product Strategy (product@starlightretail.ltd) — for executive questions contact mammon@starlightretail.ltd
 
 ---
