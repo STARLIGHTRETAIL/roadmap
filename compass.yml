@@ -1,0 +1,13 @@
+name: roadmap
+id: ari:cloud:compass:b099cca4-e168-464e-955f-9bc5bd1e455b:component/3d461702-821a-4c5d-a6f6-eb922d0c914e/5a83b1e9-368d-4dfc-a7ec-7aa72ea1f94d
+description: roadmap
+configVersion: 1
+typeId: SERVICE
+fields:
+  tier: 4
+links: []
+relationships:
+  DEPENDS_ON: []
+labels:
+  - source:github
+customFields: null
