@@ -1,106 +1,117 @@
-# GitHub public roadmap
+# Starlight Retail — Public Product Roadmap
 
-:sparkle: View the [official GitHub public product roadmap](https://github.com/orgs/github/projects/4247)[^1]
+**Last updated:** YYYY-MM-DD  
+**Maintained by:** Product Strategy (product@starlightretail.ltd) — for executive questions contact mammon@starlightretail.ltd
 
-Our product roadmap is where you can learn about what features we're working on, what stage they're in, and when we expect to bring them to you. Have any questions or comments about items on the roadmap? Share your feedback via [GitHub public feedback discussions](https://github.com/github/feedback/discussions). 
+---
 
-The roadmap repository is for communicating GitHub’s roadmap. Existing issues are currently read-only, and we are locking conversations, as we get started. Interaction limits are also in place to ensure issues originate from GitHub. We’re planning to iterate on the format of the roadmap itself, and we see potential to engage more in discussions about the future of GitHub products and features. If you have feedback about this roadmap repository itself, such as how the issues are presented, let us know through [general feedback in GitHub public feedback discussions](https://github.com/orgs/community/discussions/new?category=general).
+## Purpose
+This repository documents Starlight Retail’s public product roadmap: what we are planning, the expected delivery phases, and how customers, partners and contributors can engage. The roadmap is a transparency vehicle — not a contractual commitment — intended to align engineering, partners, and commercial teams.
 
+---
 
-## Guide to the roadmap
+## Vision
+Deliver enterprise-grade AI productivity and cloud security products that empower global teams to collaborate securely and efficiently. Our product family (including MeeTaker AI and companion offerings) prioritizes secure, scalable cloud-native services integrated with strategic partners (Google Cloud, Microsoft, IBM, AWS).
 
-Every item on the roadmap is an issue, with a label that indicates each of the following:
+---
 
-- A **release phase** that describes the next expected phase of the roadmap item. See below for a guide to release phases. 
+## Scope & Audience
+- **Audience:** Customers, partners, ecosystem engineers, and internal stakeholders (Product, Engineering, GTM, Legal, Security).  
+- **Scope:** Public product direction, feature areas, release phases, and contribution guidelines. Operational details, proprietary roadmaps, pricing and contractual commitments remain in internal systems.
 
-- A **feature area** that indicates the area of the product to which the item belongs. For a list of current product areas, see below.
+---
 
-- A **feature** that indicates the feature or product to which the item belongs. For a list of current features, see below. 
+## How to read this roadmap
+- **Roadmap items** are represented as GitHub issues. Each issue includes:
+  - Owner (team & product manager)
+  - Target phase and quarter (when applicable)
+  - Success criteria & dependencies (technical, compliance, GTM)
+  - Partner impact assessment (if applicable)
+- **Labels** summarize state and impact: `release-phase:preview`, `release-phase:ga`, `feature-area:<name>`, `partner-impact`, `security`, `compliance:gdpr`, `compliance:soc2`.
 
-- One or more **product SKU** labels that indicate which product SKUs we expect the feature to be available in. For a list of current product SKUs, see below.
-
-- One or more **deployment models** (cloud, server, and/or ae). Where not stated, features will generally come out Cloud first, and follow on Server and GHAE at or soon after GA.
-
-- Once a feature is delivered, the **shipped** label will be applied to the roadmap issue and the issue will be closed with a comment linking to the relevant [Changelog](https://github.blog/changelog/) post.
+---
 
 ## Release phases
+We use a four-tier release model:
 
-Release phases indicate the stages that the product or feature goes through, from early testing to general availability.
+- **Exploring / In design** — Conceptual work, feasibility studies; no timeline guaranteed.  
+- **Preview** — Publicly available in full or limited capacity. Documentation and timelines published. No SLA.  
+- **GA (Generally Available)** — Production-ready with SLAs and support. Typically 1–2 quarters after Preview.  
+- **Delivered / Shipped** — Feature is released and the issue is closed with changelog links.
 
-- **preview:** *Publicly available in full or limited capacity*\
-Features mostly complete and documented. Timeline and requirements for GA usually published. No SLAs or support provided.
+---
 
-- **ga:** *Generally available to all customers*\
-Ready for production use with associated SLA and technical support obligations. Approximately 1-2 quarters from Preview.
+## Feature areas
+Key product domains (labels used in issues):
 
-Some of our features may still be in the exploratory stages, and have no timeframe available. These are included in the roadmap only for early feedback. These are marked as follows: 
+- `planning` — Workflow and collaboration tools  
+- `ai-productivity` — AI assistants, transcriptions, meeting automation (MeeTaker AI + portfolio)  
+- `security-compliance` — Cloud security, identity, encryption, compliance workflows  
+- `code-to-cloud` — DevOps & platform integrations  
+- `ecosystem` — Partner APIs, connectors, and integrations  
+- `insights` — Analytics, usage, and ROI measurement
 
-- **in design:**\
-Feature in discovery phase. We have decided to build this feature, but are still figuring out _how_.
+---
 
-- **exploring:**\
-Feature under consideration. We are considering building this feature, and gathering feedback on it.
+## Product strategy & prioritization
+We prioritize initiatives that:
+1. Deliver measurable customer ROI and reduce time-to-value.  
+2. Strengthen our partner ecosystem (Google Cloud, Microsoft, IBM, AWS).  
+3. Reduce risk and cost of adoption (security & compliance).  
+4. Unlock scalable enterprise revenue across our multinational footprint.
 
-## Release phases - For GHES
+Decisions are driven by a weighted decision matrix capturing revenue potential, strategic fit, technical risk, and compliance overhead.
 
-Some features may be marked with a GHES 3.X label, which indicates that the feature will also become available for Github Enterprise Server customers. Below are the release version numbers and expected release quarters (_Note: these dates are subject to change_). 
+---
 
-**GHES release version dates**:
-| **Version Number** | **Release Quarter** | **Release Notes** |
-|-|-|-|
-| 3.12 | Q1 2024 | [Release Notes](https://docs.github.com/en/enterprise-server@3.12/admin/release-notes#3.12.0)|
-| 3.13 | Q2 2024 | [Release Notes](https://docs.github.com/en/enterprise-server@3.13/admin/release-notes#3.13.0)|
-| 3.14 | Q3 2024 | [Release Notes](https://docs.github.com/en/enterprise-server@3.14/admin/release-notes) |
-| 3.15 | Q4 2024 | -- |
+## Partner impact & GTM alignment
+- Any roadmap item with partner dependencies must include a `partner-impact` section describing:
+  - Partner(s) affected and API/contract dependencies  
+  - GTM implications and joint enablement requirements  
+  - Owner for partner liaison  
+- Product and GTM must jointly sign off before Preview for partner-facing features.
 
-## Roadmap stages
+---
 
-The roadmap is arranged on a project board to give a sense for how far out each item is on the horizon. Every product or feature is added to a particular project board column according to the quarter in which it is expected to ship next. Be sure to read the [disclaimer](#disclaimer) below since the roadmap is subject to change, especially further out on the timeline.  You'll also find an **Exploratory** column, which is used in conjunction with the **in design** and **exploring** release phase labels for when no timeframe is yet available.
+## Compliance & security
+- All features touching customer data must document compliance posture (GDPR, SOC2, and any regional requirements).  
+- Security reviews (threat model, pen test plan) are required for Preview signoff. Tag issues with `security` and link the Security Policy.  
+- See `SECURITY.md` and `PRIVACY.md` for process and reporting.
 
-GitHub Enterprise Server has major releases on a quarterly basis, and minor releases on a monthly basis. Once we know what version we are delivering a feature, we will update the issue to indicate that information.
+---
 
-## Feature Areas
+## Contribution & maintenance
+- **How to propose a roadmap item:** Open an issue using the `roadmap-item` template with owner, scope, and success criteria.  
+- **Labeling:** PMO will apply canonical labels; contributors should propose labels in the issue body.  
+- **Review cadence:** Monthly triage for new requests; quarterly executive review for prioritization and resourcing.  
+- **Issue lifecycle:** `exploring` → `in-design` → `preview` → `ga` → `shipped/closed`.
 
-The following is a list of our current product areas:
+---
 
-- **code:** Code experiences (Repositories, Pull Requests, Gists)
-- **planning:** Planning and tracking tools (Issues, Projects)
-- **code-to-cloud:** Code-to-cloud DevOps (Actions, Packages)
-- **collaboration:** Collaboration features (Pages, Wikis, Discussions)
-- **security & compliance:** Code security and compliance features
-- **admin-server:** Administrative features specific to GitHub Enterprise Server
-- **admin-cloud:** Administrative features specific to GitHub Cloud
-- **communities:** Community and social features
-- **ecosystem:** Ecosystem and API features
-- **learning:** Education and learning features
-- **insights:** Continuous learning and insights features
-- **client-apps:** Client applications (Desktop, Mobile)
-- **other:** Other features
+## Issue templates & PR guidance
+- Use `roadmap-item` template for new roadmap proposals.  
+- PRs that change roadmap text should include a one-paragraph executive summary and the implication for GTM and compliance.
 
-## Feature
+---
 
-The following is a list of our current features and products, with distinct labels for filtering:
+## Security & reporting
+Report security issues per `SECURITY.md`. For vulnerabilities exposing customer data, follow the incident response process and notify Legal & Security immediately.
 
-- **actions:** GitHub Actions
-- **docs:** GitHub Docs
-- **packages:** GitHub Packages
-- **pages:** GitHub Pages
+---
 
-_More labels will be added in the future as needed._
+## License
+This repository is licensed under **CC-BY-4.0**. See `LICENSE` for details.
 
-## Product SKUs 
+---
 
-The following is a list of our current product SKUs. 
+## Contact & governance
+- Product Strategy: product@starlightretail.ltd  
+- GTM & Partnerships: partners@starlightretail.ltd  
+- Security & Privacy: security@starlightretail.ltd  
+- Executive contact: mammon@starlightretail.ltd
 
-- **all:** Available to all users, including a free tier. Different SKUs may have different levels of functionality.
-- **github team:** GitHub Team
-- **github enterprise:** GitHub Enterprise (Cloud and Server)
-- **github one:** GitHub One (Cloud and Server)
-- **github ae:** GitHub AE (GHAE)
-- **github advanced security:** GitHub Advanced Security (add-on to GHE)
-- **github insights:** GitHub Insights (add-on to GHE)
-- **github learning lab:** GitHub Learning Lab (add-on to GHE)
+---
 
-## Disclaimer 
+## Change log & disclaimers
+This public roadmap conveys direction and intent. Dates and plans are subject to change. For formal commitments and beyond-public details, contact Product Strategy.
 
-Any statement in this repository that is not purely historical is considered a forward-looking statement. Forward-looking statements included in this repository are based on information available to GitHub as of the date they are made, and GitHub assumes no obligation to update any forward-looking statements. The forward-looking product roadmap does not represent a commitment, guarantee, obligation or promise to deliver any product or feature, or to deliver any product and feature by any particular date, and is intended to outline the general development plans. Customers should not rely on this roadmap to make any purchasing decision.
